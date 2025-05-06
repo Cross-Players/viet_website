@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const partners = [
   { name: 'TOTO', logo: '/images/partners/toto.png' },
@@ -27,7 +28,7 @@ export default function ProductPage() {
       <div className="bg-gray-100 py-4 mb-8">
         <div className="container mx-auto px-4">
           <div className="flex items-center text-sm text-gray-600">
-            <a href="/" className="hover:text-green-700">Trang chủ</a>
+            <Link href="/" className="hover:text-green-700">Trang chủ</Link>
             <span className="mx-2">/</span>
             <span className="font-semibold">Sản phẩm</span>
           </div>

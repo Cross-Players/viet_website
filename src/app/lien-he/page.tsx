@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ export default function ContactPage() {
       <div className="bg-gray-100 py-4 mb-8">
         <div className="container mx-auto px-4">
           <div className="flex items-center text-sm text-gray-600">
-            <a href="/" className="hover:text-green-700">Trang chủ</a>
+            <Link href="/" className="hover:text-green-700">Trang chủ</Link>
             <span className="mx-2">/</span>
             <span>Liên hệ</span>
           </div>

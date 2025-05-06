@@ -8,15 +8,15 @@ export default function TopBar() {
         <div className="flex space-x-8">
           <div className="flex items-center">
             <span className="text-green-700">TƯ VẤN PCCC MIỄN PHÍ:</span>
-            <a href="tel:0989060987" className="ml-2 hover:text-green-700">0989.060.987</a>
+            <Link href="tel:0989060987" className="ml-2 hover:text-green-700">0989.060.987</Link>
           </div>
           <div className="flex items-center">
             <span className="text-green-700">XÂY DỰNG VÀ M&E:</span>
-            <a href="tel:0945200793" className="ml-2 hover:text-green-700">0945.200.793</a>
+            <Link href="tel:0945200793" className="ml-2 hover:text-green-700">0945.200.793</Link>
           </div>
           <div className="flex items-center">
             <span className="text-green-700">YÊU CẦU GIA CÔNG CƠ KHÍ:</span>
-            <a href="tel:0976618983" className="ml-2 hover:text-green-700">0976.618.983</a>
+            <Link href="tel:0976618983" className="ml-2 hover:text-green-700">0976.618.983</Link>
           </div>
         </div>
         <div className="flex items-center space-x-2">

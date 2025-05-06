@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import dynamic from 'next/dynamic';
 
 const ProductService = dynamic(() => import('@/components/ProductService'), {
@@ -34,18 +35,8 @@ export default function Home() {
               Safety - Master - Innovation
             </p>
             <div className="flex space-x-4">
-              <a
-                href="/contact"
-                className="bg-green-700 text-white px-8 py-3 rounded-lg hover:bg-green-800 transition-colors"
-              >
-                Contact Us
-              </a>
-              <a
-                href="/about"
-                className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-green-700 transition-colors"
-              >
-                Learn More
-              </a>
+              <Link href="/contact" className="bg-green-700 text-white px-8 py-3 rounded-lg hover:bg-green-800 transition-colors">Contact Us</Link>
+              <Link href="/about" className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-green-700 transition-colors">Learn More</Link>
             </div>
           </div>
         </div>
@@ -62,7 +53,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Sumitech luôn tâm niệm triết lý: lòng tin của khách hàng và tài sản vô giá, và chúng tôi nỗ lực từng giờ để theo đuổi triết lý đó. Sumitech đem đến giải pháp trọn gói về nhà xưởng cho khách hàng. Từ khâu tư vấn, thiết kế bản vẽ 2D, 3D, thi công, hoàn thiện; lắp đặt hệ thống điện, khí, nước, PCCC; bảo trì, tu sửa, cải tạo; cung cấp vật tư, thiết bị,... Chúng tôi cam kết cung cấp giải pháp & dịch vụ tối ưu cho nhà xưởng của quý khách.
               </p>
-              <a 
+              <Link 
                 href="/about"
                 className="inline-flex items-center text-green-700 font-medium hover:text-green-800"
               >
@@ -70,7 +61,7 @@ export default function Home() {
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
             
             {/* Right Column - YouTube Video */}
